@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="STUDENT ERA — журнал о жизни студентов Узбекистана.">
+  <meta name="theme-color" content="#111827">
+  <title>STUDENT ERA — Your years. Your ideas. Your era.</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/articles.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">
+      STUDENT <span>ERA</span>
+      <small>THE STUDENT JOURNAL</small>
+    </a>
+
+    <nav class="nav">
+      <a href="#latest" data-i18n="navArticles">Статьи</a>
+      <a href="#categories" data-i18n="navSections">Рубрики</a>
+      <a href="#about" data-i18n="navAbout">О журнале</a>
+    </nav>
+
+    <button id="langToggle" class="lang-toggle">EN ↗</button>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">
+          ОНЛАЙН-ЖУРНАЛ · УЗБЕКИСТАН
+        </p>
+
+        <h1 data-i18n="heroTitle">
+          Твои годы.<br>Твои идеи.<br><em>Твоя эпоха.</em>
+        </h1>
+
+        <p class="hero-text" data-i18n="heroText">
+          Журнал о современной студенческой жизни: учёба, проекты,
+          люди и возможности, которые помогают строить будущее.
+        </p>
+
+        <a class="button" href="#latest" data-i18n="heroButton">
+          Исследовать журнал <span>↗</span>
+        </a>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-grid"></div>
+        <div class="art-label">ISSUE<br><strong>001</strong></div>
+        <div class="art-circle"></div>
+        <div class="art-title">LEARN.<br>BUILD.<br><i>BECOME.</i></div>
+        <div class="art-footer">STUDENT ERA / 2026</div>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div>
+        LEARN ✳ BUILD ✳ BECOME ✳
+        LEARN ✳ BUILD ✳ BECOME ✳
+      </div>
+    </section>
+
+    <section id="latest" class="wrap section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-i18n="latestEyebrow">ВЫБОР РЕДАКЦИИ</p>
+          <h2 data-i18n="latestTitle">Свежие идеи<span>.</span></h2>
+        </div>
+
+        <label class="search">
+          <span class="sr-only">Поиск статей</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Найти статью..."
+            data-i18n-placeholder="searchPlaceholder"
+          >
+          <span>⌕</span>
+        </label>
+      </div>
+
+      <div id="articleGrid" class="article-grid"></div>
+      <p id="emptyState" class="empty-state" hidden>
+        Ничего не найдено. Попробуй другой запрос.
+      </p>
+    </section>
+
+    <section id="categories" class="wrap section categories-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-i18n="categoriesEyebrow">
+            ТВОЯ ЭПОХА — ТВОИ ТЕМЫ
+          </p>
+          <h2 data-i18n="categoriesTitle">
+            Выбирай направление<span>.</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="category-grid">
+        <button class="category-card" data-category="academics">
+          <span>01 /</span>
+          <strong data-i18n="catAcademics">Учёба</strong>
+          <small data-i18n="catAcademicsDesc">Учись осознаннее.</small>
+          <b>↗</b>
+        </button>
+
+        <button class="category-card" data-category="projects">
+          <span>02 /</span>
+          <strong data-i18n="catProjects">Проекты</strong>
+          <small data-i18n="catProjectsDesc">Создавай своё.</small>
+          <b>↗</b>
+        </button>
+
+        <button class="category-card" data-category="productivity">
+          <span>03 /</span>
+          <strong data-i18n="catProductivity">Продуктивность</strong>
+          <small data-i18n="catProductivityDesc">Планируй с умом.</small>
+          <b>↗</b>
+        </button>
+
+        <button class="category-card" data-category="people">
+          <span>04 /</span>
+          <strong data-i18n="catPeople">Люди</strong>
+          <small data-i18n="catPeopleDesc">Настоящие истории.</small>
+          <b>↗</b>
+        </button>
+
+        <button class="category-card" data-category="opportunities">
+          <span>05 /</span>
+          <strong data-i18n="catOpportunities">Возможности</strong>
+          <small data-i18n="catOpportunitiesDesc">Найди следующий шаг.</small>
+          <b>↗</b>
+        </button>
+
+        <button class="category-card" data-category="life">
+          <span>06 /</span>
+          <strong data-i18n="catLife">Студенческая жизнь</strong>
+          <small data-i18n="catLifeDesc">Баланс и развитие.</small>
+          <b>↗</b>
+        </button>
+      </div>
+
+      <button id="showAll" class="text-button" type="button" data-i18n="showAll">
+        Показать все статьи ↗
+      </button>
+    </section>
+
+    <section id="about" class="about-band">
+      <div class="wrap about-inner">
+        <p class="eyebrow" data-i18n="aboutEyebrow">ЗАЧЕМ МЫ ЗДЕСЬ</p>
+
+        <h2 data-i18n="aboutTitle">
+          Студенческая жизнь —<br>
+          это больше, чем диплом<span>.</span>
+        </h2>
+
+        <p data-i18n="aboutText">
+          STUDENT ERA — независимый онлайн-журнал о людях,
+          идеях и возможностях, которые формируют новое поколение
+          студентов Узбекистана.
+        </p>
+
+        <a class="about-link" href="mailto:YOUR_EMAIL@example.com">
+          Предложить тему или историю ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <a class="brand footer-brand" href="#home">
+      STUDENT <span>ERA</span>
+      <small>THE STUDENT JOURNAL</small>
+    </a>
+
+    <p data-i18n="footerText">
+      Создано для тех, кто строит своё будущее.
+    </p>
+
+    <a href="#home" class="back-top" data-i18n="backTop">Наверх ↑</a>
+
+    <small class="copyright">
+      © <span id="year"></span> STUDENT ERA
+    </small>
+  </footer>
+
+  <dialog id="articleDialog" class="article-dialog">
+    <button id="closeDialog" class="close-dialog" aria-label="Закрыть">×</button>
+    <p id="dialogCategory" class="eyebrow"></p>
+    <h2 id="dialogTitle"></h2>
+    <p id="dialogMeta" class="dialog-meta"></p>
+    <div id="dialogBody" class="dialog-body"></div>
+  </dialog>
+</body>
+</html>
